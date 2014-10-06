@@ -1,0 +1,48 @@
+<div class="page-header">
+    <h2>Birds</h2>
+    <p>Definition: A warm blooded member of the Aves class, which has feathers, a beak, no teeth, wings and bears young in eggs.</p>
+</div>
+
+<div class="page-content">
+
+    <h3>Birds</h3>
+    <p>As an amateur bird watcher, I have gathered quite a few photos of birds along my journeys.</p>
+    <p>These photos showcase my photographic skills (Samsung Galaxy S4),
+        as I share with you photos of the more rare birds I've come across.</p>
+    <p>In some of these photos, I'm testing out a new photographic effect I like to call "Blurry Photo" or "Not in Focus".</p>
+    <p>Enjoy!</p>
+
+    <p>&#60;/sarcasm&#62;</p>
+    <p>I can't remember how it started, but this is more of an inside joke with my girlfriend.
+        Whenever I see a bird (usually on my lunchbreak at work), I'll take a photo with my phone and send it to her.
+        She also does the same, so will add her photos as well as full gallery to this site soon.</p>
+
+    <div class="jumbotron">
+
+        <!--<div style="height: 305px">-->
+        <div>
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in bird_slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <!--<h4>Slide {{$index}}</h4>-->
+                        <!--<p>{{slide.text}}</p>-->
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-6">-->
+                <!--<button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>-->
+            <!--</div>-->
+            <!--<div class="col-md-6">-->
+                <!--Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">-->
+                <!--<br />Enter a negative number to stop the interval.-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+
+    <!--<pre>slides: {{bird_slides | json}}</pre>-->
+
+</div>

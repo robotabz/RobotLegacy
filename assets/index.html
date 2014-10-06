@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Robot Legacy</title>
+
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/ng-animate/ng-animation.css">
+    <link rel="stylesheet" href="styles/ui.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!--<link rel="icon" type="image/x-icon" href="img/favicon.ico">-->
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body ng-app="RobotLegacyApp" ng-controller="MainCtrl">
+
+<div ng-show="loading">
+    <h2><i class="fa-li fa fa-spinner fa-spin"></i> Loading...</h2>
+</div>
+
+
+<ng-include src="'templates/heading.html'"></ng-include>
+
+<!--<div class="row">-->
+    <div id="wrap" ng-hide="loading">
+
+
+        <div class="container col-sm-12 col-xs-12 col-md-10 col-lg-10 col-lg-offset-1 col-md-offset-1">
+            <div ui-view></div>
+            <ng-include src="'templates/footer.html'"></ng-include>
+        </div>
+    </div>
+
+<!--</div>-->
+
+<!-- Start Build -->
+<script src="components/lodash/lodash.min.js"></script>
+<script src="components/angular/angular.min.js"></script>
+<script src="components/angular-ui-router/angular-ui-router.min.js"></script>
+<script src="components/angular-animate/angular-animate.min.js"></script>
+<!--<script src="components/jquery/jquery-2.1.1.min.js"></script>-->
+<!--<script src="styles/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="components/angular-bootstrap/ui-bootstrap-tpls-0.11.2.min.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/mainCtrl.js"></script>
+<script src="scripts/controllers/birdsCtrl.js"></script>
+<!-- End Build -->
+
+</body>
+</html>
